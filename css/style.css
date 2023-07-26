@@ -1,0 +1,34 @@
+
+:root{
+    --primary-red: #E50914;
+    --primary-white: #fff;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.header .logo img{
+    width: 150px;
+}
+
+.buttons-right button{
+    margin: 10px;
+}
+
+.header .buttons-right #sign-button{
+    background-color: var(--primary-red);
+    text-decoration: none;
+    color: var(--primary-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
