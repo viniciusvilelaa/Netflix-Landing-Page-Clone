@@ -1,4 +1,24 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;700;900&display=swap');
+
+body{
+    font-family: 'Martel Sans', sans-serif;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+
+
 :root{
     --primary-red: #E50914;
     --primary-white: #fff;
@@ -8,7 +28,7 @@
 .header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     left: 0;
     right: 0;
@@ -28,7 +48,110 @@
     text-decoration: none;
     color: var(--primary-white);
     border: none;
+    font-size: 16px;
+    
     padding: 10px 20px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
+.header .buttons-right #language-button{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    text-decoration: none;
+    color: var(--primary-white);
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-white);
+}
+
+
+.hero-section{
+    
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.8) 100%);
+    height: 46.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section img{
+    position: absolute;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+}
+
+.hero-container .hero-text{
+    color: var(--primary-white);
+    width: 100%;
+    z-index: 99999;
+}
+
+.hero-container .hero-text h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.hero-container .hero-text p{
+    
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1.5rem 0 1.5rem;
+}
+
+.hero-container .hero-text h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 1.5rem 0 2rem;
+}
+
+
+.hero-container .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container .form-container input{
+    width: 25rem;
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    
+}
+
+.hero-container .form-container button{
+    width: fit-content;
+    padding: 0.75rem 1.5rem;
+    height: 4rem;
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+    background-color: var(--primary-red);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    
+}
+
+.hero-container .form-container button:hover{
+    opacity: 75%;
+}
+
+.divider{
+    width: 100%;
+    background-color: #222222;
+    height: 8px;
+}
