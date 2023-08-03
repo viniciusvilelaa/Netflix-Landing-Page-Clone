@@ -37,6 +37,7 @@ p {
 
 }
 
+/*-------------HEADER-----------------*/
 
 .header {
     display: flex;
@@ -68,7 +69,7 @@ p {
     cursor: pointer;
 }
 
-.header .buttons-right #language-button {
+#language-button {
     background-color: transparent;
     backdrop-filter: blur(20px);
     text-decoration: none;
@@ -80,6 +81,7 @@ p {
     border: 1px solid var(--primary-white);
 }
 
+/*-------------HERO SECTION-----------------*/
 
 .hero-section {
 
@@ -123,24 +125,24 @@ p {
 }
 
 
-.hero-container .form-container {
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-container .form-container input {
+.form-container input {
     width: 25rem;
     height: 4rem;
     background-color: rgba(0, 0, 0, 0.7);
     padding-left: 1rem;
-    border: none;
+    border: 1px solid var(--primary-white);
     border-radius: 5px;
     margin-right: 0.5rem;
 
 }
 
-.hero-container .form-container button {
+.form-container button {
     width: fit-content;
     padding: 0.75rem 1.5rem;
     height: 4rem;
@@ -155,7 +157,7 @@ p {
 
 }
 
-.hero-container .form-container button:hover {
+.form-container button:hover {
     opacity: 75%;
 }
 
@@ -165,6 +167,11 @@ p {
     height: 8px;
 }
 
+/*-------------PROPS SECTION-----------------*/
+
+.props-container{
+    padding: 4.5rem 0;
+}
 
 
 .props-section .props-container {
@@ -205,4 +212,141 @@ p {
     width: 66%;
     z-index: -1;
     height: 56%;
+}
+
+.download-container{
+    background-color: #000;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 71%;
+    left: 20%;
+
+}
+
+.download-container img{
+    width: 3rem;
+}
+
+.download-text{
+    margin-left: 0.5rem;
+}
+
+.download-text p{
+    font-size: 1rem;
+}
+
+#legenda-download{
+    font-size: 0.85rem;
+    color: #0071EB;
+}
+
+
+/*-------------FAQ SECTION-----------------*/
+
+.faq-section{
+    padding: 4.5rem 0;
+}
+
+.faq-section{
+    color: white;
+    text-align: center;
+}
+
+.accordion{
+    margin: 5rem auto;
+    width: 100%;
+    max-width: 75%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #303030;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+
+.accordion li label:hover{
+    background-color: #535353;
+}
+
+label::after{
+    content: '+';
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+input[type="radio"]{
+    display: none;
+
+}
+
+.accordion .content{
+    background-color: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+
+.faq-section h3{
+    margin-bottom: 2rem;
+}
+
+/*-------------FOOTER SECTION-----------------*/
+
+.footer-container{
+    padding: 3.75rem 0;
+    margin: 0 4rem;
+}
+
+.footer-title{
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 2rem;
+}
+
+.footer-list{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-ul{
+    display: grid;
+    grid-template-columns: repeat(3, 6fr);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.footer-ul li{
+    list-style: none;
+    margin: 0.5rem 0;
 }

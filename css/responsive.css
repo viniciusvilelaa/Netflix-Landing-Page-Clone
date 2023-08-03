@@ -1,0 +1,207 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    .form-container{
+      flex-direction: column;
+    }
+
+    .form-container button{
+      margin-top: 1rem;
+    }
+
+    .props-container{
+      flex-direction: column;
+    }
+    
+    .props-container .props-left {
+      text-align: center;
+      width: 100%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    :root{
+      --h1-size: 1.5rem;
+      --p-size: 1rem;
+      --h3-size: 1.3rem;
+    }
+
+
+
+    .form-container{
+      flex-direction: column;
+    }
+
+    .form-container button{
+      margin-top: 1rem;
+    }
+
+    .props-container{
+      flex-direction: column;
+    }
+    
+    .props-container .props-left {
+      text-align: center;
+      width: 80%;
+    }
+
+    .props-container .props-right, .props-right img{
+      text-align: center;
+      width: 80%;
+    }
+
+    #img_feat{
+      position: absolute;
+      left: 21.45%;
+      top: 20%;
+      width: 57%;
+      z-index: -1;
+    }
+
+    #img_feat2{
+      
+      left: 24.45%;
+      
+      width: 50%;
+      
+    }
+
+    .accordion{
+      margin: 5rem auto;
+      width: 100%;
+      max-width: 85%;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 250px) and (max-width: 480px) {
+    
+    :root{
+      --h1-size: 1rem;
+      --p-size: 0.85rem;
+      --h3-size: 0.85rem;
+    }
+
+
+
+    .header{
+      flex-direction: column;
+      padding: 1rem 0 0 0;
+      
+    }
+
+    .hero-section{
+      height: 35rem;
+    }
+
+
+    .form-container{
+      flex-direction: column;
+    }
+
+    .form-container button{
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      height: 2rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .form-container input{
+      width: 15rem;
+      height: 2rem
+    }
+
+    .props-container{
+      flex-direction: column;
+    }
+    
+    .props-container .props-left {
+      text-align: center;
+      width: 80%;
+    }
+
+    .props-container .props-right, .props-right img{
+      text-align: center;
+      width: 80%;
+    }
+
+    #img_feat{
+      position: absolute;
+      left: 21.45%;
+      top: 20%;
+      width: 57%;
+      z-index: -1;
+    }
+
+    #img_feat2{
+      left: 25.45%;
+      width: 50%;
+    }
+    
+
+  
+
+    .accordion{
+      margin: 5rem auto;
+      width: 100%;
+      max-width: 85%;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    
+}
